@@ -1,0 +1,201 @@
+JAVASCRIPT
+--------------------------------------------------------------------------------------------------------------
+== WHERE THE JAVASCRIPT IS WRITED IN A HTML
+    <html>
+        <head>
+            "Here is typed in HTML"
+            ...
+            <style>
+                "Here is typed in CSS"
+            </style>
+        </head>
+        <body>
+            "Here is typed in HTML"
+            ...
+            <script>
+                "Here is typed in JAVASCRIPT"
+            </script>
+        </body>
+    </html>
+--------------------------------------------------------------------------------------------------------------
+=> COMMENT
+    HTML: <!-- Comment HTML -->
+    CSS: /* Comment CSS */
+    JAVASCRIPT: // Comment JAVASCRIPT ou /* Comment JAVASCRIPT */ 
+--------------------------------------------------------------------------------------------------------------
+=> USING NODE.js
+    type "node" in the prompt(CMD) to open the Node.js
+    type ".help" for more information
+--------------------------------------------------------------------------------------------------------------
+=> CREATING A ALERT
+    window.alert('message')
+--------------------------------------------------------------------------------------------------------------
+=> ASK FOR A CONFIRMATION
+    window.confirm('message')
+--------------------------------------------------------------------------------------------------------------
+=> ENTERING WITH DATAS
+    window.prompt('message')
+--------------------------------------------------------------------------------------------------------------
+=> CREATING VARIABLES
+    var n1 = 123
+    var n2 = 5.5
+    var s1 = 'String'
+--------------------------------------------------------------------------------------------------------------
+=> TYPE OF THE VARIABLE
+    typeof n1 // test the type of the variable, like String, Numbers, Boolean ...
+--------------------------------------------------------------------------------------------------------------
+=> CONVERTING STRINGS TO NUMBERS
+    Number.parseInt(var) // Where var is a string, convert to a integer number
+    Number.parseFloat(var) // Where var is a string, convert to a floating number
+    Number(var) // Where var is a string, convert to a number (the computer decides)
+--------------------------------------------------------------------------------------------------------------
+=> CONVERTING NUMBERS TO STRINGS
+    String(n) // where n is a number, convert to a string
+    n.toString() // where n is a number, convert to a string
+--------------------------------------------------------------------------------------------------------------
+=> FORMATTING STRINGS
+    `message ${var} ...` // Using crasis (`...`), put the variable in ${}
+--------------------------------------------------------------------------------------------------------------
+=> STRING SIZE
+    variable.lenght // Out is a integer number
+--------------------------------------------------------------------------------------------------------------
+=> FORMATTING A STRING IN UPPERCASE
+    variable.toUpperCase() // Remember the (), is a method 
+--------------------------------------------------------------------------------------------------------------
+=> FORMATTING A STRING IN LOWERCASE
+    variable.toLowerCase() // Remember the (), ia a method
+--------------------------------------------------------------------------------------------------------------
+=> FORMATTING NUMBERS (FIXING DECIMAL PLACES AFTER THE POINT)
+    variable.toFixed(n) // Where (n) is the number of decimal places after the point
+--------------------------------------------------------------------------------------------------------------
+=> FORMATTING NUMBERS (REPLACING POINT (.) TO COMMA (,))
+    variable.toFixed(n).replace('.', ',') // Where (n) is the number of decimal places after the point
+--------------------------------------------------------------------------------------------------------------
+=> FORMATTING TO MONETARY VALUE
+    variable.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'})
+--------------------------------------------------------------------------------------------------------------
+=> ARITHMETIC OPERATORS
+    + // sum
+    - // subtract
+    * // multiplies
+    / // divide
+    % // rest of division
+    ** // potentiation
+--------------------------------------------------------------------------------------------------------------
+=> PRECEDENCE ARITHMETIC
+    1st // () parentheses
+    2nd // potentiation
+    3rd // multiplies, divides and rest of division (left to right)
+    4th // sum and subtract
+--------------------------------------------------------------------------------------------------------------
+=> INCREMENT
+    x = x + 1       =>      x += 1      =>      x++ (post-increment) or ++x (pre-increment)
+    x = x - 1       =>      x -= 1      =>      x-- (post-increment) or --x (pre-increment)
+--------------------------------------------------------------------------------------------------------------
+=> IDENTITY
+    5 == 5 - True
+    5 == '5' - True //Here is tested if they have the same value
+    5 === '5' - False //Here is tested if they are IDENTICAL, test the value and the type
+    5 === 5 - True
+    5 !== 5 - False
+    5 !== '5' - True
+--------------------------------------------------------------------------------------------------------------
+=> LOGIC OPERATORS
+    ! = Negation (not)
+    && = Conjunction (and)
+    || = Disjunction (or)
+--------------------------------------------------------------------------------------------------------------
+=> PRECEDENCE
+    1st: + - * / % **   // Arithmetic Operators
+    2nd: < <= => >      // Relational Operators
+    3rd: !              // Logical Operators (Negation)
+    4th: &&             // Logical Operators (Conjunction)
+    5th: ||             // Logical Operators (Disjunction)
+--------------------------------------------------------------------------------------------------------------
+=> TERNARY (COMPARATION)
+    test ? 'True' : 'False' // Comparation (like if)
+    example: media > 7 ? 'APROVADO' : 'REPROVADO'
+--------------------------------------------------------------------------------------------------------------
+=> DOM (Document Object Model) 
+    window is the main object
+        into the window we have other objects, like: location, document, history and others
+    .getElementsByTagName(...)[...]
+    .getElementById(...)
+    .getElementsByName(...)
+    .querySelector(...)
+    examples in ex005.html
+--------------------------------------------------------------------------------------------------------------
+=> Events DOM
+    See the Aula 10
+--------------------------------------------------------------------------------------------------------------
+=> Functions
+    function action(param){
+
+    }
+--------------------------------------------------------------------------------------------------------------
+=> Conditions
+    if (test){
+        true
+    }else{
+        false
+    }
+--------------------------------------------------------------------------------------------------------------
+=> Nested Conditions
+    if (test){
+        true
+    }else if (test){
+            true
+        }else{
+            false
+        }
+--------------------------------------------------------------------------------------------------------------
+=> Print into the Node.js
+    console.log(`A velocidade do seu carro é ${vel}Km/h`)
+    
+--------------------------------------------------------------------------------------------------------------
+=> Multiple Conditions
+    switch (expression){
+        case value1:
+            commands
+            break
+        case value2:
+            commands
+            break
+        case value3:
+            commands
+            break
+        default:
+            commands
+            break
+    }
+--------------------------------------------------------------------------------------------------------------
+=> LOOPS
+    while (Conditions){                         //test logic in the start
+        execute while the condition is true
+    }
+
+    do{
+        execute while the condition is true
+    }while (condition)                          //test logic in the end
+--------------------------------------------------------------------------------------------------------------
+=> 
+--------------------------------------------------------------------------------------------------------------
+=> 
+--------------------------------------------------------------------------------------------------------------
+=> 
+--------------------------------------------------------------------------------------------------------------
+=> 
+--------------------------------------------------------------------------------------------------------------
+=> 
+--------------------------------------------------------------------------------------------------------------
+=> 
+--------------------------------------------------------------------------------------------------------------
+=> 
+--------------------------------------------------------------------------------------------------------------
+=> 
+--------------------------------------------------------------------------------------------------------------
+=> 
+--------------------------------------------------------------------------------------------------------------
+=> 
+--------------------------------------------------------------------------------------------------------------
+=> 

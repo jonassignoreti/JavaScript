@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body {
+            background: blue;
+            color: white;
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+    <div id="first">Primeiro Exemplo</div> <!-- using .getElementsById (POR ID)-->
+    <div name="second">Segundo Exemplo</div> <!---->
+    <div id="third">Terceiro Exemplo</div> <!---->
+    <script>
+        //DOM (Document Object Model)
+        window.document.writeln(window.document.charset + '<br/>') 
+        //Escreve no documento HTML o charset
+        window.document.writeln(window.navigator.appName + '<br/>') 
+        //Escreve no documento HTML o nome do navegador
+        window.document.writeln(window.document.URL + '<br/>') 
+        // Escreve no documento o endereço da página (URL)
+
+        //using .getElementsByTagName (POR MARCA)
+        var corpo = window.document.body 
+        //Seleciona o Body dentro de uma variável
+        var p1 = window.document.getElementsByTagName('p')[0] 
+        //[0] select the first p at line 17
+        window.document.writeln('Está escrito assim: ' + p1.innerText + '<br/>') 
+        //.innerText show with formatation
+        var p2 = window.document.getElementsByTagName('p')[1] 
+        //Quando temos Elements (no plural) devemos selecionar usando:[1] line 18, identificando qual elemento, na ordem do HTML
+        window.document.writeln('Line 18 is: ' + p2.innerText + '<br/>') 
+        //.innerHTML show with formatation
+        p1.style.color = 'blue' 
+        //we can chance the style here
+        corpo.style.background = 'black'
+
+        //using .getElementsById (POR ID)
+        var d = window.document.getElementById('first')
+        //Seleciona o elemento com a ID 'first'
+        d.style.background = 'green'
+        //altera a cor de fundo do elemento 'd'
+        d.innerText = 'Estou aguardando...'
+        //Escreve no documento HTML sem formatação
+
+        //Using .getElementsByName (POR NOME)
+        var n = window.document.getElementsByName('second')[0] 
+        //[0] first element
+        n.style.background = 'red'
+        n.innerText = 'Olá'
+
+        //Using .querySelector (more recommended)
+        var s = window.document.querySelector('div#third') 
+        // # represents id, . represents classes !!!!!!!!!!!!!!!!!!!
+        s.style.background = 'yellow'
+        s.style.color = 'black'
+    </script>
+</body>
+</html>

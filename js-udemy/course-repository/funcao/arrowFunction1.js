@@ -1,4 +1,4 @@
-let dobro = function (a) {
+let dobro = function (a) { //jogando dentro de uma variável
     return 2 * a
 }
 

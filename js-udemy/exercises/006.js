@@ -20,8 +20,6 @@ const inverso = function (param) {
     }
 }
 
-
-
 inverso(true) // retornará false
 inverso("6") // retornará "booleano ou número esperados, mas o parâmetro é do tipo string"
 inverso(-2000) // retornará 2000

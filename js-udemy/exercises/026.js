@@ -8,7 +8,7 @@ removerVogais("Fundamentos") // retornará "Fndmnts"
 const isConsoant = c => c != 'a' && c != 'e' && c != 'i' && c != 'o' && c != 'u'
 
 function removerVogais (word) {
-    return word.split('').filter(isConsoant).toString()
+    return word.split('').filter(isConsoant).join('')
 }
 
 console.log(removerVogais("Cod3r")) // retornará "Cd3r"
